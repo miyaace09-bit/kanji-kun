@@ -6,7 +6,7 @@
   <title>ボウリング幹事くん｜ハンデ計算・大会順位表・チーム戦集計</title>
   <meta name="description" content="ボウリング大会のハンデ計算、順位表、チーム戦集計、結果共有テキストを作れる無料ツールです。" />
   <style>
-    :root{--bg:#f6f8fb;--card:#fff;--ink:#172033;--muted:#667085;--line:#d9e1ee;--blue:#2563eb;--blue2:#1e40af;--red:#dc2626;--green:#16a34a;--soft:#eaf1ff}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}.wrap{max-width:1080px;margin:0 auto;padding:16px 14px 80px}.top{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:8px 0 18px}.brand{display:flex;gap:10px;align-items:center}.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#2563eb,#60a5fa);display:grid;place-items:center;color:white;font-weight:900}.brand h1{font-size:24px;margin:0;letter-spacing:-.03em}.brand p{margin:0;color:var(--muted);font-size:13px}.home{color:var(--blue2);text-decoration:none;font-weight:800}.panel{background:#fff;border:1px solid var(--line);border-radius:22px;padding:16px;box-shadow:0 12px 34px rgba(31,64,128,.06);margin-bottom:14px}.panel h2{font-size:18px;margin:0 0 12px}.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}.field{display:flex;flex-direction:column;gap:5px}label{font-weight:800;font-size:13px}input,select,textarea{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px 12px;font:inherit;background:#fff;color:var(--ink)}input[type=number]{appearance:textfield}.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.btn{border:0;border-radius:13px;background:var(--blue);color:white;font-weight:900;padding:12px 15px;cursor:pointer}.btn:hover{background:var(--blue2)}.btn.secondary{background:#fff;color:var(--blue2);border:1px solid var(--line)}.btn.danger{background:#fff;color:var(--red);border:1px solid #fecaca}.btn.green{background:var(--green)}.tableWrap{overflow:auto;border:1px solid var(--line);border-radius:16px}table{width:100%;border-collapse:collapse;min-width:720px;background:#fff}th,td{border-bottom:1px solid var(--line);padding:10px;text-align:left;vertical-align:middle}th{background:#f8fafc;font-size:13px;white-space:nowrap}td input,td select{padding:9px;border-radius:10px}.num{text-align:right}.rank1{background:#fff7ed}.rank2{background:#f8fafc}.rank3{background:#fefce8}.pill{display:inline-flex;align-items:center;border-radius:999px;padding:4px 9px;font-size:12px;font-weight:900;background:var(--soft);color:var(--blue2)}.muted{color:var(--muted);font-size:13px}.empty{padding:18px;border:1px dashed var(--line);border-radius:16px;color:var(--muted);background:#fbfdff}.share{width:100%;min-height:220px;white-space:pre-wrap}.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:#111827;color:#fff;border-radius:999px;padding:10px 16px;font-weight:800;opacity:0;pointer-events:none;transition:.2s}.toast.show{opacity:1}.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}.stat{background:#f8fafc;border:1px solid var(--line);border-radius:16px;padding:12px}.stat b{display:block;font-size:22px}.small{font-size:12px}.dangerText{color:var(--red)}@media(max-width:640px){.brand h1{font-size:21px}.panel{padding:14px;border-radius:18px}.btn{width:100%}.btns .btn{flex:1 1 160px}table{min-width:760px}}
+    :root{--bg:#f6f8fb;--card:#fff;--ink:#172033;--muted:#667085;--line:#d9e1ee;--blue:#2563eb;--blue2:#1e40af;--red:#dc2626;--green:#16a34a;--soft:#eaf1ff;--yellow:#fff7ed}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}.wrap{max-width:1120px;margin:0 auto;padding:16px 14px 80px}.top{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:8px 0 18px}.brand{display:flex;gap:10px;align-items:center}.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#2563eb,#60a5fa);display:grid;place-items:center;color:white;font-weight:900}.brand h1{font-size:24px;margin:0;letter-spacing:-.03em}.brand p{margin:0;color:var(--muted);font-size:13px}.panel{background:#fff;border:1px solid var(--line);border-radius:22px;padding:16px;box-shadow:0 12px 34px rgba(31,64,128,.06);margin-bottom:14px}.panel h2{font-size:18px;margin:0 0 12px}.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}.field{display:flex;flex-direction:column;gap:5px}label{font-weight:800;font-size:13px}input,select,textarea{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px 12px;font:inherit;background:#fff;color:var(--ink)}input[type=number]{appearance:textfield}.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.btn{border:0;border-radius:13px;background:var(--blue);color:white;font-weight:900;padding:12px 15px;cursor:pointer}.btn:hover{background:var(--blue2)}.btn.secondary{background:#fff;color:var(--blue2);border:1px solid var(--line)}.btn.danger{background:#fff;color:var(--red);border:1px solid #fecaca}.btn.green{background:var(--green)}.tableWrap{overflow:auto;border:1px solid var(--line);border-radius:16px}table{width:100%;border-collapse:collapse;min-width:900px;background:#fff}th,td{border-bottom:1px solid var(--line);padding:10px;text-align:left;vertical-align:middle}th{background:#f8fafc;font-size:13px;white-space:nowrap}td input,td select{padding:9px;border-radius:10px}.num{text-align:right}.rank1{background:#fff7ed}.rank2{background:#f8fafc}.rank3{background:#fefce8}.pill{display:inline-flex;align-items:center;border-radius:999px;padding:4px 9px;font-size:12px;font-weight:900;background:var(--soft);color:var(--blue2)}.muted{color:var(--muted);font-size:13px}.empty{padding:18px;border:1px dashed var(--line);border-radius:16px;color:var(--muted);background:#fbfdff}.share{width:100%;min-height:220px;white-space:pre-wrap}.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:#111827;color:#fff;border-radius:999px;padding:10px 16px;font-weight:800;opacity:0;pointer-events:none;transition:.2s}.toast.show{opacity:1}.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}.stat{background:#f8fafc;border:1px solid var(--line);border-radius:16px;padding:12px}.stat b{display:block;font-size:22px}.small{font-size:12px}.notice{background:#f8fafc;border:1px solid var(--line);border-radius:16px;padding:12px;margin-top:12px}.hidden{display:none!important}.inlineHelp{font-size:12px;color:var(--muted);margin-top:4px}.handicapPreview{font-weight:900;color:var(--blue2)}@media(max-width:640px){.brand h1{font-size:21px}.panel{padding:14px;border-radius:18px}.btn{width:100%}.btns .btn{flex:1 1 160px}table{min-width:920px}}
   </style>
 </head>
 <body>
@@ -28,6 +28,27 @@
         <div class="field"><label for="eventDate">開催日</label><input id="eventDate" type="date"></div>
         <div class="field"><label for="gameCount">ゲーム数</label><select id="gameCount"><option value="1">1ゲーム</option><option value="2" selected>2ゲーム</option><option value="3">3ゲーム</option><option value="4">4ゲーム</option><option value="5">5ゲーム</option><option value="6">6ゲーム</option></select></div>
       </div>
+    </section>
+
+    <section class="panel">
+      <h2>ハンデ設定</h2>
+      <div class="row">
+        <div class="field">
+          <label for="handicapMode">ハンデ方式</label>
+          <select id="handicapMode">
+            <option value="none">ハンデなし</option>
+            <option value="fixed">固定ハンデを入力</option>
+            <option value="average" selected>アベレージから自動計算</option>
+          </select>
+        </div>
+        <div class="field autoOnly"><label for="baseScore">基準スコア</label><input id="baseScore" type="number" inputmode="numeric" value="200"></div>
+        <div class="field autoOnly"><label for="handicapRate">係数</label><select id="handicapRate"><option value="0.7">70%</option><option value="0.8" selected>80%</option><option value="0.9">90%</option><option value="1">100%</option></select></div>
+        <div class="field autoOnly"><label for="maxHandicap">最大ハンデ/G</label><input id="maxHandicap" type="number" inputmode="numeric" placeholder="空欄なら上限なし"></div>
+      </div>
+      <div class="notice">
+        <b>自動計算式</b><br>
+        <span class="muted">ハンデ/G = floor((基準スコア - アベレージ) × 係数)。アベレージが基準以上なら0。最大ハンデを入れると上限を適用します。</span>
+      </div>
       <div class="btns">
         <button class="btn secondary" id="saveBtn">保存</button>
         <button class="btn danger" id="resetBtn">全データ初期化</button>
@@ -39,9 +60,11 @@
       <h2>参加者追加</h2>
       <div class="row">
         <div class="field"><label for="playerName">名前</label><input id="playerName" placeholder="例：田中"></div>
-        <div class="field"><label for="playerHandicap">1ゲームあたりのハンデ</label><input id="playerHandicap" type="number" inputmode="numeric" value="0"></div>
+        <div class="field averageInput"><label for="playerAverage">アベレージ</label><input id="playerAverage" type="number" inputmode="numeric" placeholder="例：150"><span class="inlineHelp">自動計算時に使います</span></div>
+        <div class="field fixedInput hidden"><label for="playerHandicap">固定ハンデ/G</label><input id="playerHandicap" type="number" inputmode="numeric" value="0"></div>
         <div class="field"><label for="playerTeam">チーム</label><input id="playerTeam" placeholder="例：Aチーム"></div>
       </div>
+      <p class="muted" id="addPreview">参加者を入力してください。</p>
       <div class="btns"><button class="btn" id="addPlayerBtn">参加者を追加</button></div>
     </section>
 
@@ -68,76 +91,120 @@
     <section class="panel">
       <h2>共有用テキスト</h2>
       <textarea class="share" id="shareText" readonly></textarea>
-      <div class="btns">
-        <button class="btn green" id="copyBtn">結果をコピー</button>
-      </div>
+      <div class="btns"><button class="btn green" id="copyBtn">結果をコピー</button></div>
       <p class="muted">LINEやメールに貼り付けやすい形式で出力します。</p>
     </section>
   </main>
   <div class="toast" id="toast">コピーしました</div>
 
   <script>
-    const KEY = 'bowling-kanji-kun-html-v1';
+    const KEY = 'bowling-kanji-kun-html-v2';
+    const OLD_KEY = 'bowling-kanji-kun-html-v1';
     const $ = (id) => document.getElementById(id);
     let state = {
       eventName: 'ボウリング大会',
       eventDate: new Date().toISOString().slice(0,10),
       gameCount: 2,
+      handicapMode: 'average',
+      baseScore: 200,
+      handicapRate: 0.8,
+      maxHandicap: '',
       players: []
     };
 
     function uid(){ return Math.random().toString(36).slice(2,10); }
     function toNum(v){ const n = Number(v); return Number.isFinite(n) ? n : 0; }
+    function esc(s){ return String(s ?? '').replace(/[&<>'"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c])); }
     function save(){ localStorage.setItem(KEY, JSON.stringify(state)); }
     function load(){
       try{
-        const raw = localStorage.getItem(KEY);
-        if(raw) state = {...state, ...JSON.parse(raw)};
+        const raw = localStorage.getItem(KEY) || localStorage.getItem(OLD_KEY);
+        if(raw){
+          const parsed = JSON.parse(raw);
+          state = {...state, ...parsed};
+          state.players = (state.players || []).map(p=>({ average: '', fixedHandicap: p.handicap ?? 0, ...p }));
+        }
       }catch(e){}
       $('eventName').value = state.eventName || '';
       $('eventDate').value = state.eventDate || new Date().toISOString().slice(0,10);
       $('gameCount').value = String(state.gameCount || 2);
+      $('handicapMode').value = state.handicapMode || 'average';
+      $('baseScore').value = state.baseScore || 200;
+      $('handicapRate').value = String(state.handicapRate || 0.8);
+      $('maxHandicap').value = state.maxHandicap ?? '';
+      updateModeDisplay();
     }
     function syncSettings(){
       state.eventName = $('eventName').value || 'ボウリング大会';
       state.eventDate = $('eventDate').value || '';
       state.gameCount = toNum($('gameCount').value) || 1;
-      state.players.forEach(p=>{
-        p.scores = Array.from({length: state.gameCount}, (_,i)=> toNum((p.scores||[])[i]));
-      });
-      save(); render();
+      state.handicapMode = $('handicapMode').value;
+      state.baseScore = toNum($('baseScore').value) || 200;
+      state.handicapRate = Number($('handicapRate').value) || 0.8;
+      state.maxHandicap = $('maxHandicap').value === '' ? '' : Math.max(0, toNum($('maxHandicap').value));
+      state.players.forEach(p=>{ p.scores = Array.from({length: state.gameCount}, (_,i)=> toNum((p.scores||[])[i])); });
+      updateModeDisplay(); save(); render();
+    }
+    function updateModeDisplay(){
+      const mode = $('handicapMode').value;
+      document.querySelectorAll('.autoOnly').forEach(el=>el.classList.toggle('hidden', mode !== 'average'));
+      document.querySelectorAll('.averageInput').forEach(el=>el.classList.toggle('hidden', mode !== 'average'));
+      document.querySelectorAll('.fixedInput').forEach(el=>el.classList.toggle('hidden', mode !== 'fixed'));
+      updateAddPreview();
+    }
+    function calcHandicapFromAverage(avg){
+      const base = toNum(state.baseScore) || 200;
+      const rate = Number(state.handicapRate) || 0.8;
+      let h = Math.floor(Math.max(0, base - toNum(avg)) * rate);
+      if(state.maxHandicap !== '' && state.maxHandicap !== null && state.maxHandicap !== undefined){ h = Math.min(h, toNum(state.maxHandicap)); }
+      return h;
+    }
+    function effectiveHandicap(p){
+      if(state.handicapMode === 'none') return 0;
+      if(state.handicapMode === 'fixed') return toNum(p.fixedHandicap ?? p.handicap ?? 0);
+      return calcHandicapFromAverage(p.average);
+    }
+    function handicapLabel(){
+      if(state.handicapMode === 'none') return 'なし';
+      if(state.handicapMode === 'fixed') return '固定ハンデ';
+      return `自動計算（${state.baseScore}基準・${Math.round(state.handicapRate*100)}%${state.maxHandicap!=='' ? '・上限'+state.maxHandicap : ''}）`;
+    }
+    function updateAddPreview(){
+      if(!$('addPreview')) return;
+      const avg = $('playerAverage') ? $('playerAverage').value : '';
+      const fixed = $('playerHandicap') ? $('playerHandicap').value : '';
+      if(($('handicapMode')?.value || state.handicapMode) === 'average') $('addPreview').innerHTML = `自動計算ハンデ目安：<span class="handicapPreview">${calcHandicapFromAverage(avg)}点/G</span>`;
+      else if(($('handicapMode')?.value || state.handicapMode) === 'fixed') $('addPreview').innerHTML = `固定ハンデ：<span class="handicapPreview">${toNum(fixed)}点/G</span>`;
+      else $('addPreview').textContent = 'ハンデなしで集計します。';
     }
     function addPlayer(){
       const name = $('playerName').value.trim();
       if(!name){ alert('名前を入力してください'); return; }
-      const handicap = toNum($('playerHandicap').value);
+      const average = $('playerAverage').value === '' ? '' : toNum($('playerAverage').value);
+      const fixedHandicap = toNum($('playerHandicap').value);
       const team = $('playerTeam').value.trim();
-      state.players.push({id:uid(), name, handicap, team, scores:Array.from({length:state.gameCount},()=>0)});
-      $('playerName').value=''; $('playerHandicap').value='0'; $('playerTeam').value='';
-      save(); render();
+      state.players.push({id:uid(), name, average, fixedHandicap, team, scores:Array.from({length:state.gameCount},()=>0)});
+      $('playerName').value=''; $('playerAverage').value=''; $('playerHandicap').value='0'; $('playerTeam').value='';
+      updateAddPreview(); save(); render();
     }
-    function removePlayer(id){
-      if(!confirm('この参加者を削除しますか？')) return;
-      state.players = state.players.filter(p=>p.id!==id); save(); render();
-    }
+    function removePlayer(id){ if(!confirm('この参加者を削除しますか？')) return; state.players = state.players.filter(p=>p.id!==id); save(); render(); }
     function updatePlayer(id, field, value){
       const p = state.players.find(x=>x.id===id); if(!p) return;
       if(field==='name' || field==='team') p[field] = value;
-      if(field==='handicap') p.handicap = toNum(value);
+      if(field==='average') p.average = value === '' ? '' : toNum(value);
+      if(field==='fixedHandicap') p.fixedHandicap = toNum(value);
       save(); renderResultsOnly();
     }
-    function updateScore(id, idx, value){
-      const p = state.players.find(x=>x.id===id); if(!p) return;
-      p.scores[idx] = toNum(value); save(); renderResultsOnly();
-    }
+    function updateScore(id, idx, value){ const p = state.players.find(x=>x.id===id); if(!p) return; p.scores[idx] = toNum(value); save(); renderResultsOnly(); }
     function calcPlayer(p){
       const scores = Array.from({length: state.gameCount}, (_,i)=>toNum((p.scores||[])[i]));
       const scratch = scores.reduce((a,b)=>a+b,0);
-      const handicapTotal = toNum(p.handicap) * state.gameCount;
+      const handicapPerGame = effectiveHandicap(p);
+      const handicapTotal = handicapPerGame * state.gameCount;
       const total = scratch + handicapTotal;
       const high = scores.length ? Math.max(...scores) : 0;
       const avg = state.gameCount ? scratch / state.gameCount : 0;
-      return {...p, scores, scratch, handicapTotal, total, high, avg};
+      return {...p, scores, handicapPerGame, scratch, handicapTotal, total, high, avg};
     }
     function rankedPlayers(){
       const arr = state.players.map(calcPlayer).sort((a,b)=> b.total - a.total || b.high - a.high || a.name.localeCompare(b.name,'ja'));
@@ -149,36 +216,37 @@
       state.players.map(calcPlayer).forEach(p=>{
         const name = p.team || '未設定';
         if(!map.has(name)) map.set(name, {name, members:[], scratch:0, handicapTotal:0, total:0});
-        const t = map.get(name);
-        t.members.push(p.name); t.scratch += p.scratch; t.handicapTotal += p.handicapTotal; t.total += p.total;
+        const t = map.get(name); t.members.push(p.name); t.scratch += p.scratch; t.handicapTotal += p.handicapTotal; t.total += p.total;
       });
       const arr = [...map.values()].sort((a,b)=>b.total-a.total || a.name.localeCompare(b.name,'ja'));
       let prev = null, rank = 0;
       return arr.map((t,i)=>{ if(prev === null || t.total !== prev) rank = i+1; prev = t.total; return {...t, rank}; });
     }
     function renderPlayers(){
-      if(!state.players.length){ $('playersArea').innerHTML = '<div class="empty">まだ参加者がいません。名前、ハンデ、チームを入力して追加してください。</div>'; return; }
+      if(!state.players.length){ $('playersArea').innerHTML = '<div class="empty">まだ参加者がいません。名前、アベレージまたは固定ハンデ、チームを入力して追加してください。</div>'; return; }
       const gameHeads = Array.from({length:state.gameCount}, (_,i)=>`<th>G${i+1}</th>`).join('');
+      const mode = state.handicapMode;
       const rows = state.players.map(p=>{
-        const scores = Array.from({length:state.gameCount}, (_,i)=>toNum((p.scores||[])[i]));
+        const cp = calcPlayer(p);
         return `<tr>
           <td><input value="${esc(p.name)}" onchange="updatePlayer('${p.id}','name',this.value)"></td>
-          <td><input type="number" inputmode="numeric" value="${p.handicap}" onchange="updatePlayer('${p.id}','handicap',this.value)"></td>
+          <td class="${mode==='average'?'':'hidden'}"><input type="number" inputmode="numeric" value="${p.average ?? ''}" placeholder="例：150" onchange="updatePlayer('${p.id}','average',this.value)"></td>
+          <td class="${mode==='fixed'?'':'hidden'}"><input type="number" inputmode="numeric" value="${p.fixedHandicap ?? 0}" onchange="updatePlayer('${p.id}','fixedHandicap',this.value)"></td>
+          <td class="num"><b>+${cp.handicapPerGame}</b></td>
           <td><input value="${esc(p.team||'')}" placeholder="チーム" onchange="updatePlayer('${p.id}','team',this.value)"></td>
-          ${scores.map((s,i)=>`<td><input type="number" inputmode="numeric" value="${s || ''}" placeholder="0" oninput="updateScore('${p.id}',${i},this.value)"></td>`).join('')}
+          ${cp.scores.map((s,i)=>`<td><input type="number" inputmode="numeric" value="${s || ''}" placeholder="0" oninput="updateScore('${p.id}',${i},this.value)"></td>`).join('')}
           <td><button class="btn danger small" onclick="removePlayer('${p.id}')">削除</button></td>
         </tr>`;
       }).join('');
-      $('playersArea').innerHTML = `<div class="tableWrap"><table><thead><tr><th>名前</th><th>ハンデ/G</th><th>チーム</th>${gameHeads}<th></th></tr></thead><tbody>${rows}</tbody></table></div>`;
+      const extraHead = mode === 'average' ? '<th>アベレージ</th>' : mode === 'fixed' ? '<th>固定H/G</th>' : '';
+      $('playersArea').innerHTML = `<div class="tableWrap"><table><thead><tr><th>名前</th>${extraHead}<th>適用H/G</th><th>チーム</th>${gameHeads}<th></th></tr></thead><tbody>${rows}</tbody></table></div>`;
     }
     function renderSummary(){
-      const players = rankedPlayers();
-      const teams = rankedTeams();
-      const top = players[0];
-      const high = players.reduce((best,p)=> !best || p.high > best.high ? p : best, null);
+      const players = rankedPlayers(); const teams = rankedTeams(); const top = players[0]; const high = players.reduce((best,p)=> !best || p.high > best.high ? p : best, null);
       $('summaryArea').innerHTML = `
         <div class="stat"><span class="muted">参加者</span><b>${state.players.length}人</b></div>
         <div class="stat"><span class="muted">ゲーム数</span><b>${state.gameCount}G</b></div>
+        <div class="stat"><span class="muted">ハンデ方式</span><b style="font-size:16px">${esc(handicapLabel())}</b></div>
         <div class="stat"><span class="muted">個人1位</span><b>${top ? esc(top.name) : '-'}</b></div>
         <div class="stat"><span class="muted">ハイゲーム</span><b>${high ? esc(high.name)+' '+high.high : '-'}</b></div>
         <div class="stat"><span class="muted">チーム数</span><b>${teams.length}</b></div>`;
@@ -186,50 +254,44 @@
     function renderIndividual(){
       const players = rankedPlayers();
       if(!players.length){ $('individualResults').innerHTML='<div class="empty">スコアを入力すると順位が表示されます。</div>'; return; }
-      const rows = players.map(p=>`<tr class="${p.rank===1?'rank1':p.rank===2?'rank2':p.rank===3?'rank3':''}"><td><span class="pill">${p.rank}位</span></td><td>${esc(p.name)}</td><td class="num">${p.scratch}</td><td class="num">+${p.handicapTotal}</td><td class="num"><b>${p.total}</b></td><td class="num">${p.high}</td><td class="num">${p.avg.toFixed(1)}</td><td>${esc(p.team||'-')}</td></tr>`).join('');
-      $('individualResults').innerHTML = `<div class="tableWrap"><table><thead><tr><th>順位</th><th>名前</th><th class="num">素点</th><th class="num">ハンデ</th><th class="num">合計</th><th class="num">最高</th><th class="num">平均</th><th>チーム</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+      const rows = players.map(p=>`<tr class="${p.rank===1?'rank1':p.rank===2?'rank2':p.rank===3?'rank3':''}"><td><span class="pill">${p.rank}位</span></td><td>${esc(p.name)}</td><td class="num">${p.average === '' || p.average == null ? '-' : p.average}</td><td class="num">+${p.handicapPerGame}</td><td class="num">${p.scratch}</td><td class="num">+${p.handicapTotal}</td><td class="num"><b>${p.total}</b></td><td class="num">${p.high}</td><td class="num">${p.avg.toFixed(1)}</td><td>${esc(p.team||'-')}</td></tr>`).join('');
+      $('individualResults').innerHTML = `<div class="tableWrap"><table><thead><tr><th>順位</th><th>名前</th><th class="num">登録Avg</th><th class="num">H/G</th><th class="num">素点</th><th class="num">H合計</th><th class="num">総合</th><th class="num">最高</th><th class="num">今回Avg</th><th>チーム</th></tr></thead><tbody>${rows}</tbody></table></div>`;
     }
     function renderTeam(){
       const teams = rankedTeams();
       if(!teams.length){ $('teamResults').innerHTML='<div class="empty">チームを入力するとチーム順位が表示されます。</div>'; return; }
       const rows = teams.map(t=>`<tr class="${t.rank===1?'rank1':t.rank===2?'rank2':t.rank===3?'rank3':''}"><td><span class="pill">${t.rank}位</span></td><td>${esc(t.name)}</td><td>${esc(t.members.join('、'))}</td><td class="num">${t.scratch}</td><td class="num">+${t.handicapTotal}</td><td class="num"><b>${t.total}</b></td></tr>`).join('');
-      $('teamResults').innerHTML = `<div class="tableWrap"><table><thead><tr><th>順位</th><th>チーム</th><th>メンバー</th><th class="num">素点</th><th class="num">ハンデ</th><th class="num">合計</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+      $('teamResults').innerHTML = `<div class="tableWrap"><table><thead><tr><th>順位</th><th>チーム</th><th>メンバー</th><th class="num">素点</th><th class="num">H合計</th><th class="num">総合</th></tr></thead><tbody>${rows}</tbody></table></div>`;
     }
     function makeShareText(){
-      const players = rankedPlayers(); const teams = rankedTeams();
-      const lines = [];
+      const players = rankedPlayers(); const teams = rankedTeams(); const lines = [];
       lines.push(`【${state.eventName || 'ボウリング大会'} 結果】`);
       if(state.eventDate) lines.push(`開催日：${state.eventDate}`);
-      lines.push(`ゲーム数：${state.gameCount}G`);
-      lines.push('');
-      lines.push('■ 個人順位');
-      players.slice(0,20).forEach(p=> lines.push(`${p.rank}位 ${p.name} ${p.total}点（素点${p.scratch} + H${p.handicapTotal}）`));
-      if(teams.length){
-        lines.push(''); lines.push('■ チーム順位');
-        teams.forEach(t=> lines.push(`${t.rank}位 ${t.name} ${t.total}点`));
-      }
+      lines.push(`ゲーム数：${state.gameCount}G`); lines.push(`ハンデ：${handicapLabel()}`); lines.push(''); lines.push('■ 個人順位');
+      players.slice(0,20).forEach(p=> lines.push(`${p.rank}位 ${p.name} ${p.total}点（素点${p.scratch} + H${p.handicapTotal} / H${p.handicapPerGame}×${state.gameCount}G）`));
+      if(teams.length){ lines.push(''); lines.push('■ チーム順位'); teams.forEach(t=> lines.push(`${t.rank}位 ${t.name} ${t.total}点`)); }
       const high = players.reduce((best,p)=> !best || p.high > best.high ? p : best, null);
       if(high){ lines.push(''); lines.push(`ハイゲーム：${high.name} ${high.high}点`); }
-      lines.push(''); lines.push('集計：ボウリング幹事くん');
-      return lines.join('\n');
+      lines.push(''); lines.push('集計：ボウリング幹事くん'); return lines.join('\n');
     }
     function renderShare(){ $('shareText').value = makeShareText(); }
     function renderResultsOnly(){ renderSummary(); renderIndividual(); renderTeam(); renderShare(); }
     function render(){ renderPlayers(); renderResultsOnly(); }
-    function esc(s){ return String(s ?? '').replace(/[&<>'"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c])); }
-    async function copyShare(){
-      const text = $('shareText').value;
-      try{ await navigator.clipboard.writeText(text); showToast('コピーしました'); }
-      catch(e){ $('shareText').select(); document.execCommand('copy'); showToast('コピーしました'); }
-    }
+    async function copyShare(){ const text = $('shareText').value; try{ await navigator.clipboard.writeText(text); showToast('コピーしました'); } catch(e){ $('shareText').select(); document.execCommand('copy'); showToast('コピーしました'); } }
     function showToast(msg){ const t=$('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),1500); }
 
     $('eventName').addEventListener('input', syncSettings);
     $('eventDate').addEventListener('change', syncSettings);
     $('gameCount').addEventListener('change', syncSettings);
+    $('handicapMode').addEventListener('change', syncSettings);
+    $('baseScore').addEventListener('input', syncSettings);
+    $('handicapRate').addEventListener('change', syncSettings);
+    $('maxHandicap').addEventListener('input', syncSettings);
+    $('playerAverage').addEventListener('input', updateAddPreview);
+    $('playerHandicap').addEventListener('input', updateAddPreview);
     $('addPlayerBtn').addEventListener('click', addPlayer);
     $('saveBtn').addEventListener('click', ()=>{ syncSettings(); showToast('保存しました'); });
-    $('resetBtn').addEventListener('click', ()=>{ if(confirm('全データを削除しますか？')){ localStorage.removeItem(KEY); location.reload(); } });
+    $('resetBtn').addEventListener('click', ()=>{ if(confirm('全データを削除しますか？')){ localStorage.removeItem(KEY); localStorage.removeItem(OLD_KEY); location.reload(); } });
     $('copyBtn').addEventListener('click', copyShare);
     load(); render();
     window.updatePlayer = updatePlayer; window.updateScore = updateScore; window.removePlayer = removePlayer;
