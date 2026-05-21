@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>幹事くんシリーズ｜イベント集計ツール</title>
+  <meta name="description" content="幹事くんシリーズは、イベントの面倒な集計をすばやく終わらせるための無料ツール集です。" />
+  <style>
+    :root{--bg:#f6f8fb;--card:#fff;--ink:#172033;--muted:#667085;--line:#d9e1ee;--blue:#2563eb;--blue2:#1e40af;--soft:#eaf1ff;--green:#16a34a}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:linear-gradient(180deg,#eef5ff 0%,var(--bg) 42%);color:var(--ink);line-height:1.7}.wrap{max-width:980px;margin:0 auto;padding:24px 16px 56px}.hero{padding:36px 0 24px}.badge{display:inline-flex;gap:8px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 12px;color:var(--blue2);font-weight:700;font-size:13px}.title{font-size:clamp(32px,7vw,58px);line-height:1.1;margin:18px 0 12px;letter-spacing:-.04em}.lead{font-size:clamp(16px,3.5vw,20px);color:var(--muted);max-width:720px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:24px}.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:0 16px 40px rgba(31,64,128,.08)}.card h2{margin:0 0 8px;font-size:22px}.card p{margin:0 0 18px;color:var(--muted)}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:14px;background:var(--blue);color:#fff;text-decoration:none;font-weight:800;padding:12px 16px;box-shadow:0 10px 18px rgba(37,99,235,.22)}.btn:hover{background:var(--blue2)}.ghost{background:#fff;color:var(--blue2);border:1px solid var(--line);box-shadow:none}.coming{display:inline-block;background:#f2f4f7;color:#667085;border-radius:999px;padding:4px 10px;font-size:12px;font-weight:800}.section{margin-top:34px}.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}.step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px}.step b{display:block;font-size:18px;margin-bottom:4px}.footer{margin-top:48px;color:var(--muted);font-size:13px}.note{background:#fff7ed;border:1px solid #fed7aa;border-radius:18px;padding:14px 16px;color:#7c2d12;margin-top:16px}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="badge">幹事くんシリーズ</span>
+      <h1 class="title">面倒な集計を、<br>その場で終わらせる。</h1>
+      <p class="lead">ボウリング大会、ゴルフ会、飲み会、社内レクリエーション。紙と電卓で迷子になりがちな幹事作業を、スマホで使える小さな道具にします。</p>
+      <div class="note">現在公開中：ボウリング幹事くん。ハンデ計算、順位表、チーム戦集計、共有テキスト作成に対応しています。</div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>ボウリング幹事くん</h2>
+        <p>ボウリング大会のハンデ計算、個人順位、チーム順位、LINE共有用テキストを作成できます。</p>
+        <a class="btn" href="./bowling/">使ってみる</a>
+      </article>
+      <article class="card">
+        <h2>ゴルフ幹事くん</h2>
+        <p>オリンピック、ラスベガス、ニアピンなどのポイント集計用。今後追加予定です。</p>
+        <span class="coming">準備中</span>
+      </article>
+      <article class="card">
+        <h2>飲み会幹事くん</h2>
+        <p>会費、景品代、余り金、立替をまとめる精算ツール。今後追加予定です。</p>
+        <span class="coming">準備中</span>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>使い方</h2>
+      <div class="steps">
+        <div class="step"><b>1. 参加者登録</b>名前とハンデを入力します。</div>
+        <div class="step"><b>2. スコア入力</b>各ゲームの最終スコアを入れます。</div>
+        <div class="step"><b>3. 自動集計</b>個人戦・チーム戦の順位を表示します。</div>
+        <div class="step"><b>4. 共有</b>結果テキストをコピーしてLINEなどに貼れます。</div>
+      </div>
+    </section>
+
+    <footer class="footer">© 幹事くんシリーズ</footer>
+  </main>
+</body>
+</html>
