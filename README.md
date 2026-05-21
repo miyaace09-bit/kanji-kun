@@ -1,33 +1,19 @@
-# 幹事くんシリーズ
+# ボウリング幹事くん
 
-現在は「ボウリング幹事くん」をトップページと `/bowling/` で公開する静的HTML版です。
+ボウリング大会のハンデ計算・順位表・チーム戦集計ツールです。
 
-## 今回の修正
+## 公開ページ
 
-- ハンデ方式を追加
-  - ハンデなし
-  - 固定ハンデ
-  - アベレージから自動計算
-- 自動計算式を追加
-  - ハンデ/G = floor((基準スコア - アベレージ) × 係数)
-- 基準スコア、係数、最大ハンデを設定可能
-- 適用ハンデ/G、ハンデ合計、総合点を表示
+- `/` ボウリング幹事くん本体
+- `/bowling/` ボウリング幹事くん本体
+- `/about/` このサイトについて
+- `/privacy/` プライバシーポリシー
+- `/terms/` 利用規約
+- `/contact/` お問い合わせ
 
-## 公開方法
+## Vercel設定
 
-このフォルダの中身をGitHubリポジトリ直下にアップロードしてください。
-
-```text
-index.html
-bowling/
-golf/
-darts/
-mahjong/
-party/
-shared/
-assets/
-legal/
-README.md
-```
-
-Vercelでは Framework Preset を `Other` にしてDeployしてください。
+- Framework Preset: Other
+- Build Command: 空欄
+- Output Directory: 空欄または `.`
+- Install Command: 空欄
