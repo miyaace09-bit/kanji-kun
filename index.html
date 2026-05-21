@@ -6,7 +6,7 @@
   <title>ボウリング幹事くん｜ハンデ計算・大会順位表・チーム戦集計</title>
   <meta name="description" content="ボウリング大会のハンデ計算、順位表、チーム戦集計、結果共有テキストを作れる無料ツールです。" />
   <style>
-    :root{--bg:#f6f8fb;--card:#fff;--ink:#172033;--muted:#667085;--line:#d9e1ee;--blue:#2563eb;--blue2:#1e40af;--red:#dc2626;--green:#16a34a;--soft:#eaf1ff;--yellow:#fff7ed}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}.wrap{max-width:1120px;margin:0 auto;padding:16px 14px 80px}.top{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:8px 0 18px}.brand{display:flex;gap:10px;align-items:center}.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#2563eb,#60a5fa);display:grid;place-items:center;color:white;font-weight:900}.brand h1{font-size:24px;margin:0;letter-spacing:-.03em}.brand p{margin:0;color:var(--muted);font-size:13px}.panel{background:#fff;border:1px solid var(--line);border-radius:22px;padding:16px;box-shadow:0 12px 34px rgba(31,64,128,.06);margin-bottom:14px}.panel h2{font-size:18px;margin:0 0 12px}.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}.field{display:flex;flex-direction:column;gap:5px}label{font-weight:800;font-size:13px}input,select,textarea{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px 12px;font:inherit;background:#fff;color:var(--ink)}input[type=number]{appearance:textfield}.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.btn{border:0;border-radius:13px;background:var(--blue);color:white;font-weight:900;padding:12px 15px;cursor:pointer}.btn:hover{background:var(--blue2)}.btn.secondary{background:#fff;color:var(--blue2);border:1px solid var(--line)}.btn.danger{background:#fff;color:var(--red);border:1px solid #fecaca}.btn.green{background:var(--green)}.tableWrap{overflow:auto;border:1px solid var(--line);border-radius:16px}table{width:100%;border-collapse:collapse;min-width:900px;background:#fff}th,td{border-bottom:1px solid var(--line);padding:10px;text-align:left;vertical-align:middle}th{background:#f8fafc;font-size:13px;white-space:nowrap}td input,td select{padding:9px;border-radius:10px}.num{text-align:right}.rank1{background:#fff7ed}.rank2{background:#f8fafc}.rank3{background:#fefce8}.pill{display:inline-flex;align-items:center;border-radius:999px;padding:4px 9px;font-size:12px;font-weight:900;background:var(--soft);color:var(--blue2)}.muted{color:var(--muted);font-size:13px}.empty{padding:18px;border:1px dashed var(--line);border-radius:16px;color:var(--muted);background:#fbfdff}.share{width:100%;min-height:220px;white-space:pre-wrap}.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:#111827;color:#fff;border-radius:999px;padding:10px 16px;font-weight:800;opacity:0;pointer-events:none;transition:.2s}.toast.show{opacity:1}.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}.stat{background:#f8fafc;border:1px solid var(--line);border-radius:16px;padding:12px}.stat b{display:block;font-size:22px}.small{font-size:12px}.notice{background:#f8fafc;border:1px solid var(--line);border-radius:16px;padding:12px;margin-top:12px}.hidden{display:none!important}.inlineHelp{font-size:12px;color:var(--muted);margin-top:4px}.handicapPreview{font-weight:900;color:var(--blue2)}@media(max-width:640px){.brand h1{font-size:21px}.panel{padding:14px;border-radius:18px}.btn{width:100%}.btns .btn{flex:1 1 160px}table{min-width:920px}}
+    :root{--bg:#f6f8fb;--card:#fff;--ink:#172033;--muted:#667085;--line:#d9e1ee;--blue:#2563eb;--blue2:#1e40af;--red:#dc2626;--green:#16a34a;--soft:#eaf1ff;--yellow:#fff7ed}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}.wrap{max-width:1120px;margin:0 auto;padding:16px 14px 80px}.top{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:8px 0 18px}.brand{display:flex;gap:10px;align-items:center}.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#2563eb,#60a5fa);display:grid;place-items:center;color:white;font-weight:900}.brand h1{font-size:24px;margin:0;letter-spacing:-.03em}.brand p{margin:0;color:var(--muted);font-size:13px}.panel{background:#fff;border:1px solid var(--line);border-radius:22px;padding:16px;box-shadow:0 12px 34px rgba(31,64,128,.06);margin-bottom:14px}.panel h2{font-size:18px;margin:0 0 12px}.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}.field{display:flex;flex-direction:column;gap:5px}label{font-weight:800;font-size:13px}input,select,textarea{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px 12px;font:inherit;background:#fff;color:var(--ink)}input[type=number]{appearance:textfield}.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.btn{border:0;border-radius:13px;background:var(--blue);color:white;font-weight:900;padding:12px 15px;cursor:pointer}.btn:hover{background:var(--blue2)}.btn.secondary{background:#fff;color:var(--blue2);border:1px solid var(--line)}.btn.danger{background:#fff;color:var(--red);border:1px solid #fecaca}.btn.green{background:var(--green)}.tableWrap{overflow:auto;border:1px solid var(--line);border-radius:16px}table{width:100%;border-collapse:collapse;min-width:900px;background:#fff}th,td{border-bottom:1px solid var(--line);padding:10px;text-align:left;vertical-align:middle}th{background:#f8fafc;font-size:13px;white-space:nowrap}td input,td select{padding:9px;border-radius:10px}.num{text-align:right}.rank1{background:#fff7ed}.rank2{background:#f8fafc}.rank3{background:#fefce8}.pill{display:inline-flex;align-items:center;border-radius:999px;padding:4px 9px;font-size:12px;font-weight:900;background:var(--soft);color:var(--blue2)}.muted{color:var(--muted);font-size:13px}.empty{padding:18px;border:1px dashed var(--line);border-radius:16px;color:var(--muted);background:#fbfdff}.share{width:100%;min-height:220px;white-space:pre-wrap}.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:#111827;color:#fff;border-radius:999px;padding:10px 16px;font-weight:800;opacity:0;pointer-events:none;transition:.2s}.toast.show{opacity:1}.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}.stat{background:#f8fafc;border:1px solid var(--line);border-radius:16px;padding:12px}.stat b{display:block;font-size:22px}.small{font-size:12px}.notice{background:#f8fafc;border:1px solid var(--line);border-radius:16px;padding:12px;margin-top:12px}.hidden{display:none!important}.inlineHelp{font-size:12px;color:var(--muted);margin-top:4px}.handicapPreview{font-weight:900;color:var(--blue2)}.warn{color:#b45309;font-weight:900}.warnBox{background:#fffbeb;border:1px solid #fcd34d;color:#92400e;border-radius:16px;padding:12px;margin:10px 0;font-weight:700}@media(max-width:640px){.brand h1{font-size:21px}.panel{padding:14px;border-radius:18px}.btn{width:100%}.btns .btn{flex:1 1 160px}table{min-width:920px}}
   </style>
 </head>
 <body>
@@ -159,10 +159,18 @@
       if(state.maxHandicap !== '' && state.maxHandicap !== null && state.maxHandicap !== undefined){ h = Math.min(h, toNum(state.maxHandicap)); }
       return h;
     }
+    function isAverageMissing(p){
+      return state.handicapMode === 'average' && (p.average === '' || p.average === null || p.average === undefined);
+    }
     function effectiveHandicap(p){
       if(state.handicapMode === 'none') return 0;
       if(state.handicapMode === 'fixed') return toNum(p.fixedHandicap ?? p.handicap ?? 0);
+      if(isAverageMissing(p)) return 0;
       return calcHandicapFromAverage(p.average);
+    }
+    function handicapDisplay(p){
+      if(isAverageMissing(p)) return '<span class="warn">未設定</span>';
+      return '+' + effectiveHandicap(p);
     }
     function handicapLabel(){
       if(state.handicapMode === 'none') return 'なし';
@@ -173,7 +181,10 @@
       if(!$('addPreview')) return;
       const avg = $('playerAverage') ? $('playerAverage').value : '';
       const fixed = $('playerHandicap') ? $('playerHandicap').value : '';
-      if(($('handicapMode')?.value || state.handicapMode) === 'average') $('addPreview').innerHTML = `自動計算ハンデ目安：<span class="handicapPreview">${calcHandicapFromAverage(avg)}点/G</span>`;
+      if(($('handicapMode')?.value || state.handicapMode) === 'average') {
+        if(avg === '') $('addPreview').innerHTML = '<span class="warn">アベレージ未入力：追加後はハンデ未設定として表示します</span>';
+        else $('addPreview').innerHTML = `自動計算ハンデ目安：<span class="handicapPreview">${calcHandicapFromAverage(avg)}点/G</span>`;
+      }
       else if(($('handicapMode')?.value || state.handicapMode) === 'fixed') $('addPreview').innerHTML = `固定ハンデ：<span class="handicapPreview">${toNum(fixed)}点/G</span>`;
       else $('addPreview').textContent = 'ハンデなしで集計します。';
     }
@@ -232,7 +243,7 @@
           <td><input value="${esc(p.name)}" onchange="updatePlayer('${p.id}','name',this.value)"></td>
           <td class="${mode==='average'?'':'hidden'}"><input type="number" inputmode="numeric" value="${p.average ?? ''}" placeholder="例：150" onchange="updatePlayer('${p.id}','average',this.value)"></td>
           <td class="${mode==='fixed'?'':'hidden'}"><input type="number" inputmode="numeric" value="${p.fixedHandicap ?? 0}" onchange="updatePlayer('${p.id}','fixedHandicap',this.value)"></td>
-          <td class="num"><b>+${cp.handicapPerGame}</b></td>
+          <td class="num"><b>${handicapDisplay(p)}</b></td>
           <td><input value="${esc(p.team||'')}" placeholder="チーム" onchange="updatePlayer('${p.id}','team',this.value)"></td>
           ${cp.scores.map((s,i)=>`<td><input type="number" inputmode="numeric" value="${s || ''}" placeholder="0" oninput="updateScore('${p.id}',${i},this.value)"></td>`).join('')}
           <td><button class="btn danger small" onclick="removePlayer('${p.id}')">削除</button></td>
@@ -243,7 +254,8 @@
     }
     function renderSummary(){
       const players = rankedPlayers(); const teams = rankedTeams(); const top = players[0]; const high = players.reduce((best,p)=> !best || p.high > best.high ? p : best, null);
-      $('summaryArea').innerHTML = `
+      const missing = state.handicapMode === 'average' ? state.players.filter(isAverageMissing) : [];
+      $('summaryArea').innerHTML = (missing.length ? `<div class="warnBox">アベレージ未設定の参加者が${missing.length}人います：${esc(missing.map(p=>p.name).join('、'))}<br>未設定の人はハンデ0点/Gで仮集計しています。</div>` : '') + `
         <div class="stat"><span class="muted">参加者</span><b>${state.players.length}人</b></div>
         <div class="stat"><span class="muted">ゲーム数</span><b>${state.gameCount}G</b></div>
         <div class="stat"><span class="muted">ハンデ方式</span><b style="font-size:16px">${esc(handicapLabel())}</b></div>
@@ -254,7 +266,7 @@
     function renderIndividual(){
       const players = rankedPlayers();
       if(!players.length){ $('individualResults').innerHTML='<div class="empty">スコアを入力すると順位が表示されます。</div>'; return; }
-      const rows = players.map(p=>`<tr class="${p.rank===1?'rank1':p.rank===2?'rank2':p.rank===3?'rank3':''}"><td><span class="pill">${p.rank}位</span></td><td>${esc(p.name)}</td><td class="num">${p.average === '' || p.average == null ? '-' : p.average}</td><td class="num">+${p.handicapPerGame}</td><td class="num">${p.scratch}</td><td class="num">+${p.handicapTotal}</td><td class="num"><b>${p.total}</b></td><td class="num">${p.high}</td><td class="num">${p.avg.toFixed(1)}</td><td>${esc(p.team||'-')}</td></tr>`).join('');
+      const rows = players.map(p=>`<tr class="${p.rank===1?'rank1':p.rank===2?'rank2':p.rank===3?'rank3':''}"><td><span class="pill">${p.rank}位</span></td><td>${esc(p.name)}</td><td class="num">${p.average === '' || p.average == null ? '-' : p.average}</td><td class="num">${handicapDisplay(p)}</td><td class="num">${p.scratch}</td><td class="num">${isAverageMissing(p) ? '<span class="warn">未設定</span>' : '+'+p.handicapTotal}</td><td class="num"><b>${p.total}</b></td><td class="num">${p.high}</td><td class="num">${p.avg.toFixed(1)}</td><td>${esc(p.team||'-')}</td></tr>`).join('');
       $('individualResults').innerHTML = `<div class="tableWrap"><table><thead><tr><th>順位</th><th>名前</th><th class="num">登録Avg</th><th class="num">H/G</th><th class="num">素点</th><th class="num">H合計</th><th class="num">総合</th><th class="num">最高</th><th class="num">今回Avg</th><th>チーム</th></tr></thead><tbody>${rows}</tbody></table></div>`;
     }
     function renderTeam(){
@@ -268,7 +280,12 @@
       lines.push(`【${state.eventName || 'ボウリング大会'} 結果】`);
       if(state.eventDate) lines.push(`開催日：${state.eventDate}`);
       lines.push(`ゲーム数：${state.gameCount}G`); lines.push(`ハンデ：${handicapLabel()}`); lines.push(''); lines.push('■ 個人順位');
-      players.slice(0,20).forEach(p=> lines.push(`${p.rank}位 ${p.name} ${p.total}点（素点${p.scratch} + H${p.handicapTotal} / H${p.handicapPerGame}×${state.gameCount}G）`));
+      const missing = state.handicapMode === 'average' ? players.filter(isAverageMissing) : [];
+      if(missing.length){ lines.push(`※アベレージ未設定：${missing.map(p=>p.name).join('、')}（ハンデ0点/Gで仮集計）`); lines.push(''); }
+      players.slice(0,20).forEach(p=> {
+        const hText = isAverageMissing(p) ? 'H未設定（0点/Gで仮集計）' : `H${p.handicapTotal} / H${p.handicapPerGame}×${state.gameCount}G`;
+        lines.push(`${p.rank}位 ${p.name} ${p.total}点（素点${p.scratch} + ${hText}）`);
+      });
       if(teams.length){ lines.push(''); lines.push('■ チーム順位'); teams.forEach(t=> lines.push(`${t.rank}位 ${t.name} ${t.total}点`)); }
       const high = players.reduce((best,p)=> !best || p.high > best.high ? p : best, null);
       if(high){ lines.push(''); lines.push(`ハイゲーム：${high.name} ${high.high}点`); }
